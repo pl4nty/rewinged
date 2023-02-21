@@ -11,6 +11,7 @@ on:
 # https://goreleaser.com/ci/actions/#token-permissions
 permissions:
   contents: write
+  packages: write
 
 jobs:
   build:
@@ -49,3 +50,4 @@ jobs:
           args: release --rm-dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
