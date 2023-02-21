@@ -1,0 +1,3 @@
+FROM mcr.microsoft.com/windows/nanoserver:ltsc2022
+COPY rewinged.exe /bin/rewinged.exe
+ENTRYPOINT ["/bin/rewinged.exe"]

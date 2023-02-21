@@ -47,6 +47,7 @@ release:
 dockers:
   - id: windows
     goos: windows
+    dockerfile: Dockerfile.windows
     ids:
     - windows
 
